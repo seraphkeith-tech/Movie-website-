@@ -1,0 +1,8 @@
+{
+  "name": "Camelot | Premium Streaming",
+  "description": "A high-end cinematic streaming experience with glassmorphic UI and motion-driven interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

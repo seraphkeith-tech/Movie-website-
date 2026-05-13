@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=PT+Serif:ital,wght@1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "PT Serif", serif;
+  
+  --color-camelot-gold: #d4af37;
+  --color-camelot-gold-bright: #f1c40f;
+  --color-camelot-black: #0b0b0c;
+  --color-camelot-dark: #121214;
+}
+
+@layer base {
+  body {
+    @apply bg-camelot-black text-white font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight leading-[0.9];
+  }
+}
+
+/* Custom Scrollbar for movie rows */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Geometric balance borders */
+.geo-border {
+  @apply border border-white/10;
+}
+
+.geo-border-b {
+  @apply border-b border-white/10;
+}
+
+.geo-border-r {
+  @apply border-r border-white/10;
+}
+
+/* Panel background */
+.panel-bg {
+  @apply bg-white/[0.02];
+}
